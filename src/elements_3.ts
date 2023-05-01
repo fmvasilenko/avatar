@@ -1,6 +1,8 @@
 import background_1 from './svg/17_fon/fon_dark.svg';
 import background_2 from './svg/17_fon/fon_light.svg';
 
+import chair_1 from './svg/13_Chair/13_chair.svg';
+
 import shirt_blue from './svg/12_Shirt/shirt-blue.svg';
 import shirt_green from './svg/12_Shirt/shirt-green.svg';
 import shirt_orange from './svg/12_Shirt/shirt-orange.svg';
@@ -80,6 +82,9 @@ import lashes_1 from './svg/8_Lashes/lashes_1-01.svg';
 import lashes_2 from './svg/8_Lashes/lashes_2-01.svg';
 import lashes_3 from './svg/8_Lashes/lashes_3-01.svg';
 
+import glasses_1 from './svg/2_Glasses/glasses_1.svg';
+import glasses_2 from './svg/2_Glasses/glasses_2.svg';
+
 import nose_1 from './svg/1_Nose/nose_1.svg';
 import nose_2 from './svg/1_Nose/nose_2.svg';
 import nose_3 from './svg/1_Nose/nose_3.svg';
@@ -108,160 +113,317 @@ import lips_4_normal from './svg/8_Mouth/lips/lips_4/lips_4_normal.svg';
 import lips_4_pink from './svg/8_Mouth/lips/lips_4/lips_4_pink.svg';
 import lips_4_red from './svg/8_Mouth/lips/lips_4/lips_4_red.svg';
 
-type ToolPanelItemOption = {
+import beard_black from './svg/3_Mustache/beard_2/beard_2_black.svg';
+import beard_blond from './svg/3_Mustache/beard_2/beard_2_blond.svg';
+import beard_brown from './svg/3_Mustache/beard_2/beard_2_brown.svg';
+import beard_grey from './svg/3_Mustache/beard_2/beard_2_grey.svg';
+import beard_purple from './svg/3_Mustache/beard_2/beard_2_purple.svg';
+import beard_red from './svg/3_Mustache/beard_2/beard_2_red.svg';
+
+import goatee_black from './svg/3_Mustache/goatee_1/beard_goatee_black.svg';
+import goatee_blond from './svg/3_Mustache/goatee_1/beard_goatee_blond.svg';
+import goatee_brown from './svg/3_Mustache/goatee_1/beard_goatee_brown.svg';
+import goatee_grey from './svg/3_Mustache/goatee_1/beard_goatee_grey.svg';
+import goatee_purple from './svg/3_Mustache/goatee_1/beard_goatee_purple.svg';
+import goatee_red from './svg/3_Mustache/goatee_1/beard_goatee_red.svg';
+
+import mustache_black from './svg/3_Mustache/mustache_2/mustache_black-01.svg';
+import mustache_blond from './svg/3_Mustache/mustache_2/mustache_blond-01.svg';
+import mustache_brown from './svg/3_Mustache/mustache_2/mustache_brown-01.svg';
+import mustache_grey from './svg/3_Mustache/mustache_2/mustache_grey.svg';
+import mustache_purple from './svg/3_Mustache/mustache_2/mustache_purple-01.svg';
+import mustache_red from './svg/3_Mustache/mustache_2/mustache_red-01.svg';
+
+import ear_white from './svg/5_Ear/ear_white.svg';
+import ear_tan from './svg/5_Ear/ear_tan.svg';
+import ear_tan_1 from './svg/5_Ear/ear_tan_1.svg';
+import ear_brown from './svg/5_Ear/ear_brown.svg';
+import ear_black from './svg/5_Ear/ear_black.svg';
+
+import watch_1 from './svg/9_Watch/9_watch.svg';
+
+import text_for_dark from './svg/14_Text/text_for_dark.svg';
+import text_for_light from './svg/14_Text/text_for_light.svg';
+
+import text_carma from './svg/15_text_Carma/15_text_Carma.svg';
+
+import lightingOurPath_light from './svg/16_text_lighting_our_path_with_positivity/text_light.svg';
+import lightingOurPath_dark from './svg/16_text_lighting_our_path_with_positivity/text_dark.svg';
+
+type Options = {
   [key: string]: string;
 };
 
-type ToolPanelItemConfig = {
-  [key: string]: ToolPanelItemOption;
+type IElement = {
+  hideToolPanel?: boolean;
+  hasCheckBox?: boolean;
+  defaultDisplayed?: boolean;
+  elements: {
+    [key: string]: Options;
+  };
 };
 
 type Elements = {
-  [key: string]: ToolPanelItemConfig;
+  [key: string]: IElement;
 };
 
 const elements: Elements = {
   background: {
-    default: {
-      '#1B003D': background_1,
-      '#ffcd05': background_2,
+    elements: {
+      default: {
+        '#1B003D': background_1,
+        '#ffcd05': background_2,
+      },
+    },
+  },
+  chair: {
+    hideToolPanel: true,
+    elements: {
+      default: {
+        0: chair_1,
+      },
     },
   },
   shirt: {
-    default: {
-      blue: shirt_blue,
-      green: shirt_green,
-      orange: shirt_orange,
-      pink: shirt_pink,
-      red: shirt_red,
-      white: shirt_white,
-      yellow: shirt_yellow,
+    elements: {
+      default: {
+        blue: shirt_blue,
+        green: shirt_green,
+        orange: shirt_orange,
+        pink: shirt_pink,
+        red: shirt_red,
+        white: shirt_white,
+        yellow: shirt_yellow,
+      },
     },
   },
   face: {
-    default: {
-      white: body_white,
-      tan: body_tan,
-      chocolate: body_tan_1,
-      brown: body_brown,
-      black: body_black,
+    elements: {
+      default: {
+        white: body_white,
+        tan: body_tan,
+        chocolate: body_tan_1,
+        brown: body_brown,
+        black: body_black,
+      },
     },
   },
   hair: {
-    balding: {
-      black: hair_balding_black,
-      blond: hair_balding_blond,
-      brown: hair_balding_brown,
-      grey: hair_balding_grey,
-      purple: hair_balding_purple,
-      red: hair_balding_red,
-    },
-    curleyLong: {
-      black: hair_curlyLong_black,
-      blond: hair_curlyLong_blond,
-      brown: hair_curlyLong_brown,
-      grey: hair_curlyLong_grey,
-      purple: hair_curlyLong_purple,
-      red: hair_curlyLong_red,
-    },
-    curlyShort: {
-      black: hair_curlyShort_black,
-      blond: hair_curlyShort_blond,
-      brown: hair_curlyShort_brown,
-      grey: hair_curlyShort_grey,
-      purple: hair_curlyShort_purple,
-      red: hair_curlyShort_red,
-    },
-    straightShort: {
-      black: hair_straightShort_black,
-      blond: hair_straightShort_blond,
-      brown: hair_straightShort_brown,
-      grey: hair_straightShort_grey,
-      purple: hair_straightShort_purple,
-      red: hair_straightShort_red,
-    },
-    straightLong: {
-      black: hair_straightLong_black,
-      blond: hair_straightLong_blond,
-      brown: hair_straightLong_brown,
-      grey: hair_straightLong_grey,
-      purple: hair_straightLong_purple,
-      red: hair_straightLong_red,
+    hasCheckBox: true,
+    defaultDisplayed: true,
+    elements: {
+      balding: {
+        black: hair_balding_black,
+        blond: hair_balding_blond,
+        brown: hair_balding_brown,
+        grey: hair_balding_grey,
+        purple: hair_balding_purple,
+        red: hair_balding_red,
+      },
+      curleyLong: {
+        black: hair_curlyLong_black,
+        blond: hair_curlyLong_blond,
+        brown: hair_curlyLong_brown,
+        grey: hair_curlyLong_grey,
+        purple: hair_curlyLong_purple,
+        red: hair_curlyLong_red,
+      },
+      curlyShort: {
+        black: hair_curlyShort_black,
+        blond: hair_curlyShort_blond,
+        brown: hair_curlyShort_brown,
+        grey: hair_curlyShort_grey,
+        purple: hair_curlyShort_purple,
+        red: hair_curlyShort_red,
+      },
+      straightShort: {
+        black: hair_straightShort_black,
+        blond: hair_straightShort_blond,
+        brown: hair_straightShort_brown,
+        grey: hair_straightShort_grey,
+        purple: hair_straightShort_purple,
+        red: hair_straightShort_red,
+      },
+      straightLong: {
+        black: hair_straightLong_black,
+        blond: hair_straightLong_blond,
+        brown: hair_straightLong_brown,
+        grey: hair_straightLong_grey,
+        purple: hair_straightLong_purple,
+        red: hair_straightLong_red,
+      },
     },
   },
   eyes: {
-    big: {
-      blue: eyes_big_blue,
-      brown: eyes_big_brown,
-      green: eyes_big_green,
-    },
-    big_2: {
-      blue: eyes_big_2_blue,
-      brown: eyes_big_2_brown,
-      green: eyes_big_2_green,
-    },
-    big_3: {
-      blue: eyes_big_3_blue,
-      brown: eyes_big_3_brown,
-      green: eyes_big_3_green,
-    },
-    normal: {
-      blue: eyes_normal_blue,
-      brown: eyes_normal_brown,
-      green: eyes_normal_green,
-    },
-    skinny: {
-      blue: eyes_skinny_blue,
-      brown: eyes_skinny_brown,
-      green: eyes_skinny_green,
+    elements: {
+      big: {
+        blue: eyes_big_blue,
+        brown: eyes_big_brown,
+        green: eyes_big_green,
+      },
+      big_2: {
+        blue: eyes_big_2_blue,
+        brown: eyes_big_2_brown,
+        green: eyes_big_2_green,
+      },
+      big_3: {
+        blue: eyes_big_3_blue,
+        brown: eyes_big_3_brown,
+        green: eyes_big_3_green,
+      },
+      normal: {
+        blue: eyes_normal_blue,
+        brown: eyes_normal_brown,
+        green: eyes_normal_green,
+      },
+      skinny: {
+        blue: eyes_skinny_blue,
+        brown: eyes_skinny_brown,
+        green: eyes_skinny_green,
+      },
     },
   },
   eyebrows: {
-    1: { default: eyebrows_1 },
-    2: { default: eyebrows_2 },
-    3: { default: eyebrows_3 },
-    4: { default: eyebrows_4 },
-    5: { default: eyebrows_5 },
+    elements: {
+      1: { default: eyebrows_1 },
+      2: { default: eyebrows_2 },
+      3: { default: eyebrows_3 },
+      4: { default: eyebrows_4 },
+      5: { default: eyebrows_5 },
+    },
   },
   lashes: {
-    1: { default: lashes_1 },
-    2: { default: lashes_2 },
-    3: { default: lashes_3 },
+    hasCheckBox: true,
+    defaultDisplayed: true,
+    elements: {
+      1: { default: lashes_1 },
+      2: { default: lashes_2 },
+      3: { default: lashes_3 },
+    },
+  },
+  glasses: {
+    hasCheckBox: true,
+    defaultDisplayed: false,
+    elements: {
+      1: { default: glasses_1 },
+      2: { default: glasses_2 },
+    },
   },
   nose: {
-    1: { default: nose_1 },
-    2: { default: nose_2 },
-    3: { default: nose_3 },
-    4: { default: nose_4 },
-    5: { default: nose_5 },
-    6: { default: nose_6 },
-    7: { default: nose_7 },
-    8: { default: nose_8 },
+    elements: {
+      1: { default: nose_1 },
+      2: { default: nose_2 },
+      3: { default: nose_3 },
+      4: { default: nose_4 },
+      5: { default: nose_5 },
+      6: { default: nose_6 },
+      7: { default: nose_7 },
+      8: { default: nose_8 },
+    },
   },
   mouth: {
-    1: { default: mouth_1 },
-    2: { default: mouth_2 },
+    elements: {
+      1: { default: mouth_1 },
+      2: { default: mouth_2 },
+    },
   },
   lips: {
-    lips_1: {
-      white: lips_1_normal,
-      pink: lips_1_pink,
-      red: lips_1_red,
+    hasCheckBox: true,
+    defaultDisplayed: false,
+    elements: {
+      lips_1: {
+        white: lips_1_normal,
+        pink: lips_1_pink,
+        red: lips_1_red,
+      },
+      lips_2: {
+        white: lips_2_normal,
+        pink: lips_2_pink,
+        red: lips_2_red,
+      },
+      lips_3: {
+        white: lips_3_normal,
+        pink: lips_3_pink,
+        red: lips_3_red,
+      },
+      lips_4: {
+        white: lips_4_normal,
+        pink: lips_4_pink,
+        red: lips_4_red,
+      },
     },
-    lips_2: {
-      white: lips_2_normal,
-      pink: lips_2_pink,
-      red: lips_2_red,
+  },
+  mustache: {
+    hasCheckBox: true,
+    defaultDisplayed: false,
+    elements: {
+      beard: {
+        black: beard_black,
+        blond: beard_blond,
+        brown: beard_brown,
+        grey: beard_grey,
+        purple: beard_purple,
+        red: beard_red,
+      },
+      goatee: {
+        black: goatee_black,
+        blond: goatee_blond,
+        brown: goatee_brown,
+        grey: goatee_grey,
+        purple: goatee_purple,
+        red: goatee_red,
+      },
+      mustache: {
+        black: mustache_black,
+        blond: mustache_blond,
+        brown: mustache_brown,
+        grey: mustache_grey,
+        purple: mustache_purple,
+        red: mustache_red,
+      },
     },
-    lips_3: {
-      white: lips_3_normal,
-      pink: lips_3_pink,
-      red: lips_3_red,
+  },
+  ear: {
+    hideToolPanel: true,
+    elements: {
+      default: {
+        white: ear_white,
+        tan: ear_tan,
+        chocolate: ear_tan_1,
+        brown: ear_brown,
+        black: ear_black,
+      },
     },
-    lips_4: {
-      white: lips_4_normal,
-      pink: lips_4_pink,
-      red: lips_4_red,
+  },
+  watch: {
+    hasCheckBox: true,
+    defaultDisplayed: true,
+    elements: {
+      0: { default: watch_1 },
+    },
+  },
+  text: {
+    hideToolPanel: true,
+    elements: {
+      default: {
+        dark: text_for_light,
+        light: text_for_dark,
+      },
+    },
+  },
+  textCarma: {
+    hideToolPanel: true,
+    elements: {
+      0: { default: text_carma },
+    },
+  },
+  lightningOurPath: {
+    hideToolPanel: true,
+    elements: {
+      default: {
+        light: lightingOurPath_light,
+        dark: lightingOurPath_dark,
+      },
     },
   },
 };
@@ -269,4 +431,5 @@ const elements: Elements = {
 export default elements;
 export type {
   Elements,
+  IElement,
 };

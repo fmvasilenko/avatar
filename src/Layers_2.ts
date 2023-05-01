@@ -6,6 +6,7 @@ interface ILayer {
   url: string;
   positionX?: number;
   positionY?: number;
+  displayed?: boolean;
   onUrlUpdated?: (url: string) => void;
 }
 
@@ -13,6 +14,7 @@ interface ILayerInternal extends ILayer {
   positionX: number;
   positionY: number;
   order: number;
+  displayed: boolean;
 }
 
 interface ILayersInternal {
@@ -40,6 +42,7 @@ class Layers {
     this.updateUrl = this.updateUrl.bind(this);
     this.updatePositionX = this.updatePositionX.bind(this);
     this.updatePositionY = this.updatePositionY.bind(this);
+    this.updateDisplayed = this.updateDisplayed.bind(this);
   }
 
   public set(payload: ILayer | ILayer[]) {
@@ -61,16 +64,19 @@ class Layers {
   }
 
   public getUrlsList() {
-    return Object.keys(this.layers).map((name) => this.layers[name].url);
+    return Object.entries(this.layers)
+      .filter((layer) => layer[1].displayed)
+      .map(([name]) => this.layers[name].url);
   }
 
-  public update(name: string, property: 'url' | 'positionX' | 'positionY', value: string | number) {
+  public update(name: string, property: 'url' | 'positionX' | 'positionY' | 'displayed', value: string | number | boolean) {
     if (!this.layers[name]) throw new LayerNotFoundError(name);
 
     const update = {
       url: this.updateUrl,
       positionX: this.updatePositionX,
       positionY: this.updatePositionY,
+      displayed: this.updateDisplayed,
     };
 
     update[property](name, value);
@@ -83,7 +89,12 @@ class Layers {
   }
 
   private setLayer(layer: ILayer) {
-    const { name, positionX, positionY } = layer;
+    const {
+      name,
+      positionX,
+      positionY,
+      displayed,
+    } = layer;
 
     if (this.layers[name]) {
       this.layers[name] = {
@@ -91,6 +102,7 @@ class Layers {
         positionX: positionX || this.layers[name].positionX,
         positionY: positionY || this.layers[name].positionY,
         order: this.layers[name].order,
+        displayed: displayed === undefined ? true : displayed,
       };
     } else {
       this.order.push(name);
@@ -99,6 +111,7 @@ class Layers {
         positionX: positionX || 0,
         positionY: positionY || 0,
         order: this.order.length - 1,
+        displayed: displayed === undefined ? true : displayed,
       };
     }
   }
@@ -114,7 +127,7 @@ class Layers {
     delete this.layers[name];
   }
 
-  private updateUrl(name: string, url: number | string) {
+  private updateUrl(name: string, url: number | string | boolean) {
     if (typeof url !== 'string') {
       throw new TypeError(`Url for '${name}' is supposed to have string type. Now the type is '${typeof url}'`);
     }
@@ -122,7 +135,7 @@ class Layers {
     this.layers[name].url = url;
   }
 
-  private updatePositionX(name: string, value: number | string) {
+  private updatePositionX(name: string, value: number | string | boolean) {
     if (typeof value !== 'number') {
       throw new TypeError(`PositionX for '${name}' is supposed to have number type. Now the type is '${typeof value}'`);
     }
@@ -130,13 +143,22 @@ class Layers {
     this.layers[name].positionX = value;
   }
 
-  private updatePositionY(name: string, value: number | string) {
+  private updatePositionY(name: string, value: number | string | boolean) {
     if (typeof value !== 'number') {
       throw new TypeError(`PositionY for '${name}' is supposed to have number type. Now the type is '${typeof value}'`);
     }
 
     this.layers[name].positionY = value;
   }
+
+  private updateDisplayed(name: string, value: number | string | boolean) {
+    if (typeof value !== 'boolean') {
+      throw new TypeError(`Displayed for '${name}' is supposed to have boolean type. Now the type is '${typeof value}'`);
+    }
+
+    this.layers[name].displayed = value;
+  }
 }
 
 export default Layers;
+export type { ILayer };

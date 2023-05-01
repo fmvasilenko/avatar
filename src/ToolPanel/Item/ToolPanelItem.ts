@@ -1,18 +1,17 @@
-import { button, div, p } from '../../Elementarno';
-
-type ToolPanelItemOption = {
-  [key: string]: string;
-};
-
-type ToolPanelItemConfig = {
-  [key: string]: ToolPanelItemOption;
-};
+import {
+  button,
+  div,
+  input,
+  label,
+  p,
+} from '../../Elementarno';
+import { IElement } from '../../elements_3';
 
 type ToolPanelItemProps = {
   container: HTMLElement;
   name: string;
-  config: ToolPanelItemConfig;
-  updateCallback: (name: string, url: string) => void;
+  config: IElement;
+  updateCallback: (name: string, property: 'url' | 'displayed', value: string | boolean) => void;
 };
 
 class ToolPanelItem {
@@ -20,9 +19,11 @@ class ToolPanelItem {
 
   private name: string;
 
-  private config: ToolPanelItemConfig;
+  private config: IElement;
 
-  private update: () => void;
+  private updateUrl: () => void;
+
+  private updateDisplayed: (value: boolean) => void;
 
   private itemOptions: string[];
 
@@ -41,10 +42,11 @@ class ToolPanelItem {
     this.container = container;
     this.name = name;
     this.config = config;
-    this.update = () => updateCallback(name, this.getCurrentUrl());
+    this.updateUrl = () => updateCallback(name, 'url', this.getCurrentUrl());
+    this.updateDisplayed = (value: boolean) => updateCallback(name, 'displayed', value);
 
-    this.itemOptions = Object.keys(this.config);
-    this.itemColors = Object.keys(this.config[this.itemOptions[0]]);
+    this.itemOptions = Object.keys(this.config.elements);
+    this.itemColors = Object.keys(this.config.elements[this.itemOptions[0]]);
     [this.pickedColor] = this.itemColors;
 
     this.render();
@@ -53,10 +55,17 @@ class ToolPanelItem {
   private render() {
     const root = div({ className: 'ToolPanel__group' });
     const title = p({ className: 'ToolPanel__title' }, [this.name]);
+    const checkbox = input({ type: 'checkbox', className: 'ToolPanel__checkbox', checked: this.config.defaultDisplayed });
+    checkbox.onchange = (event: any) => this.updateDisplayed(event.currentTarget.checked);
+    const titleWithCheckbox = label({ className: 'ToolPanel__titleWithCheckbox' }, [
+      checkbox,
+      title,
+    ]);
     const buttons = this.itemOptions.length > 1 ? this.renderButtons() : null;
     const colors = this.itemColors.length > 1 ? this.renderColors() : null;
 
-    root.append(title);
+    if (this.config.hasCheckBox) root.append(titleWithCheckbox);
+    else root.append(title);
     if (buttons) root.append(buttons);
     if (colors) root.append(colors);
     this.container.append(root);
@@ -103,23 +112,23 @@ class ToolPanelItem {
     if (this.pickedOptionIndex === this.itemOptions.length - 1) this.pickedOptionIndex = 0;
     else this.pickedOptionIndex += 1;
 
-    this.update();
+    this.updateUrl();
   }
 
   private previousOption() {
     if (this.pickedOptionIndex === 0) this.pickedOptionIndex = this.itemOptions.length - 1;
     else this.pickedOptionIndex -= 1;
 
-    this.update();
+    this.updateUrl();
   }
 
   private setColor(color: string) {
     this.pickedColor = color;
-    this.update();
+    this.updateUrl();
   }
 
   private getCurrentUrl() {
-    return this.config[this.itemOptions[this.pickedOptionIndex]][this.pickedColor];
+    return this.config.elements[this.itemOptions[this.pickedOptionIndex]][this.pickedColor];
   }
 }
 
