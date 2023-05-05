@@ -1,30 +1,34 @@
-import { button } from './Elementarno';
-import Layers, { ILayer } from './Layers_2';
+import { button, div, img } from './Elementarno';
+import Layers, { ILayer } from './Layers/Layers';
 import SVG from './SVG';
-import elements from './elements_3';
+import elements from './elements';
 import ToolPanel from './ToolPanel/ToolPanel';
 import updateEar from './utils/updateEar';
 import updateText from './utils/updateText';
 import updateLightOurPath from './utils/updateLightningOurPath';
 
-const container = document.createElement('div');
-container.id = 'container';
-container.classList.add('container');
-document.body.append(container);
+// TEMPORARY! REMOVE BEFORE RELEASE!
+const blockContainer = div({ id: 'block-container', className: 'blockContainer' });
+document.body.append(blockContainer);
+// TEMPORARY! REMOVE BEFORE RELEASE!
+
+const imageContainer = div({ id: 'image-container', className: 'Avatar__imageContainer' });
+blockContainer.append(imageContainer);
 
 const render = (urls: string[]) => {
-  container.innerHTML = '';
+  imageContainer.innerHTML = '';
 
   urls.forEach((url) => {
-    const image = new Image();
-    image.src = url;
-    image.classList.add('img');
-
-    container.append(image);
+    imageContainer.append(img({ src: url, className: 'Avatar__layer' }));
   });
 };
 
-const layers = new Layers();
+const layers = new Layers((updatedLayers) => {
+  render(Object.entries(updatedLayers)
+    .filter((layer) => layer[1].displayed)
+    .map(([name]) => updatedLayers[name].url));
+});
+
 layers.set(Object.entries(elements).map((element) => {
   const [name, value] = element;
   const { defaultDisplayed } = value;
@@ -57,7 +61,6 @@ const svg = new SVG(layers, render);
 
 const update = (name: string, property: 'url' | 'displayed', value: string | boolean) => {
   layers.update(name, property, value);
-  svg.update();
 };
 
 const toolPanel = new ToolPanel(document.body, elements, update);

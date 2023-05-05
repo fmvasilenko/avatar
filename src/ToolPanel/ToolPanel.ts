@@ -1,5 +1,5 @@
 import { div } from '../Elementarno';
-import { Elements } from '../elements_3';
+import { Elements } from '../elements';
 import ToolPanelItem from './Item/ToolPanelItem';
 
 type UpdateCallback = (name: string, property: 'url' | 'displayed', value: string | boolean) => void;

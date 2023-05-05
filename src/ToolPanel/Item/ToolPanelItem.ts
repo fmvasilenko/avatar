@@ -5,7 +5,7 @@ import {
   label,
   p,
 } from '../../Elementarno';
-import { IElement } from '../../elements_3';
+import { IElement } from '../../elements';
 
 type ToolPanelItemProps = {
   container: HTMLElement;

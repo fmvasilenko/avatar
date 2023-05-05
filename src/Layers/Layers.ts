@@ -1,5 +1,5 @@
-import LayerNotFoundError from './errors/LayerNotFoundError';
-import TypeError from './errors/TypeError';
+import LayerNotFoundError from '../errors/LayerNotFoundError';
+import TypeError from '../errors/TypeError';
 
 interface ILayer {
   name: string;
@@ -21,14 +21,18 @@ interface ILayersInternal {
   [key: string]: ILayerInternal;
 }
 
-// TODO: add moveLayerUp, moveLayerDown, bringToFront, sendToBottom
+type OnUpdateCallback = (layers: ILayersInternal) => void;
 
 class Layers {
   private layers: ILayersInternal = {};
 
   private order: string[] = [];
 
-  constructor() {
+  private onUpdate?: OnUpdateCallback;
+
+  constructor(onUpdate?: OnUpdateCallback) {
+    this.onUpdate = onUpdate;
+
     this.set = this.set.bind(this);
     this.remove = this.remove.bind(this);
     this.get = this.get.bind(this);
@@ -82,6 +86,8 @@ class Layers {
     update[property](name, value);
 
     if (property === 'url') this.layers[name].onUrlUpdated?.(String(value));
+
+    if (this.onUpdate) this.onUpdate(this.layers);
   }
 
   private setLayers(layers: ILayer[]) {

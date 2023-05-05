@@ -1,29 +1,6 @@
-@import './ToolPanel.scss';
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  background: black;
-}
-
-.container {
-  width: 450px;
-  height: 378px;
-}
-
-.img {
-  position: absolute;
-  width: 450px;
-  height: 378px;
-  border-radius: 15px;
-}
+@import './generalTemporary.scss';
+@import './Avatar.scss';
+@import './ToolPanel/ToolPanel.scss';
 
 .button {
   width: 200px;
@@ -34,10 +11,6 @@ body {
   color: white;
 
   &:hover {
-    background: #eee;
-  }
-
-  &:focus {
-    background: white;
+    background: #E3891D;
   }
 }

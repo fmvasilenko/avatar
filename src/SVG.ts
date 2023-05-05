@@ -1,16 +1,8 @@
-import Layers from './Layers_2';
+import Layers from './Layers/Layers';
 import { a } from './Elementarno';
 
 interface IRender {
   (urls: string[]): void;
-}
-
-interface IElements {
-  face: string[];
-  hair: string[];
-  eyes: string[];
-  nose: string[];
-  mouth: string[];
 }
 
 class SVG {
@@ -25,7 +17,7 @@ class SVG {
   }
 
   public async save() {
-    const fetchedEl = await Promise.all(this.layers.getUrlsList().map((el) => this.getElement(el)));
+    const fetchedEl = await Promise.all(this.layers.getUrlsList().map((el) => SVG.getElement(el)));
 
     const openingTag = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 450 378">';
     const content = fetchedEl.join();
@@ -35,13 +27,12 @@ class SVG {
 
     const downloadLink = a({ href: URL.createObjectURL(blob), download: 'avatar.svg' }, ['download']);
     document.body.append(downloadLink);
+
+    downloadLink.click();
+    downloadLink.remove();
   }
 
-  public update() {
-    this.render(this.layers.getUrlsList());
-  }
-
-  private getElement(url: string) {
+  static getElement(url: string) {
     return fetch(url)
       .then((res) => res.text())
       .then((text) => {
@@ -51,35 +42,6 @@ class SVG {
         return svgDoc.querySelector('svg')?.innerHTML;
       });
   }
-
-  /*
-  private init() {
-    this.layers.set([
-      {
-        name: 'face',
-        url: this.elements.face[0],
-      },
-      {
-        name: 'hair',
-        url: this.elements.hair[0],
-      },
-      {
-        name: 'eyes',
-        url: this.elements.eyes[0],
-      },
-      {
-        name: 'nose',
-        url: this.elements.nose[0],
-      },
-      {
-        name: 'mouth',
-        url: this.elements.mouth[0],
-      },
-    ]);
-
-    this.render(this.layers.getUrlsList());
-  }
-  */
 }
 
 export default SVG;

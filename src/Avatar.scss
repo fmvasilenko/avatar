@@ -1,0 +1,13 @@
+.Avatar {
+  &__imageContainer {
+    width: 450px;
+    height: 378px;
+  }
+
+  &__layer {
+    position: absolute;
+    width: 450px;
+    height: 378px;
+    border-radius: 15px;
+  }
+}
