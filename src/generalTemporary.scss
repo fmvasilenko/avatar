@@ -6,8 +6,11 @@
 
 body {
   background: black;
+  display: flex;
+  justify-content: center;
 }
 
 .blockContainer {
   max-width: 1200px;
+  width: 100%;
 }
