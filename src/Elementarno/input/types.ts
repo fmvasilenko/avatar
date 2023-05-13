@@ -56,6 +56,7 @@ interface IInputProps extends IFormElementProps {
   spellcheck?: boolean;
   src?: string;
   step?: number;
+  onchange?: (event: Event) => void;
 }
 
 interface IInput {

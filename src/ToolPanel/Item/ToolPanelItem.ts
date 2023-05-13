@@ -55,8 +55,12 @@ class ToolPanelItem {
   private render() {
     const root = div({ className: 'ToolPanel__group' });
     const title = p({ className: 'ToolPanel__title' }, [this.name]);
-    const checkbox = input({ type: 'checkbox', className: 'ToolPanel__checkbox', checked: this.config.defaultDisplayed });
-    checkbox.onchange = (event: any) => this.updateDisplayed(event.currentTarget.checked);
+    const checkbox = input({
+      type: 'checkbox',
+      className: 'ToolPanel__checkbox',
+      checked: this.config.defaultDisplayed,
+      onchange: (event: Event) => this.updateDisplayed((event.target as HTMLInputElement).checked),
+    });
     const titleWithCheckbox = label({ className: 'ToolPanel__titleWithCheckbox' }, [
       checkbox,
       title,

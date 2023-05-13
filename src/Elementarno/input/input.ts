@@ -26,6 +26,7 @@ const input: IInput = (props, children) => {
       spellcheck,
       src,
       step,
+      onchange,
     } = props;
 
     addFormProperties(root, props);
@@ -49,6 +50,7 @@ const input: IInput = (props, children) => {
     if (spellcheck) root.setAttribute('spellcheck', 'true');
     if (src) root.setAttribute('src', src);
     if (step) root.setAttribute('step', String(step));
+    if (onchange) root.onchange = onchange;
   }
 
   return root;

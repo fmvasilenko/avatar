@@ -2,7 +2,7 @@ import { IChildren, IFormElementProps } from '../types';
 
 interface IButtonProps extends IFormElementProps {
   type?: 'button' | 'submit' | 'reset' | 'menu';
-  onclick?: () => void;
+  onclick?: (event: Event) => void;
 }
 
 interface IButton {
