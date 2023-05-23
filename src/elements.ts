@@ -45,6 +45,13 @@ import hair_straightShort_grey from './svg/10_Hair/Shraight short/1/hair_straigh
 import hair_straightShort_purple from './svg/10_Hair/Shraight short/1/hair_straightShort_purple.svg';
 import hair_straightShort_red from './svg/10_Hair/Shraight short/1/hair_straightShort_red.svg';
 
+import hair_short_black from './svg/10_Hair/Short/hair_short_black.svg';
+import hair_short_blond from './svg/10_Hair/Short/hair_short_blond.svg';
+import hair_short_brown from './svg/10_Hair/Short/hair_short_brown.svg';
+import hair_short_grey from './svg/10_Hair/Short/hair_short_grey.svg';
+import hair_short_purple from './svg/10_Hair/Short/hair_short_purple.svg';
+import hair_short_red from './svg/10_Hair/Short/hair_short_red.svg';
+
 import hair_straightLong_black from './svg/10_Hair/Straight Long/1/hair_straightLong_black.svg';
 import hair_straightLong_blond from './svg/10_Hair/Straight Long/1/hair_straightLong_blond.svg';
 import hair_straightLong_brown from './svg/10_Hair/Straight Long/1/hair_straightLong_brown.svg';
@@ -78,9 +85,7 @@ import eyebrows_3 from './svg/6_Eyebrows/eyebrows_3.svg';
 import eyebrows_4 from './svg/6_Eyebrows/eyebrows_4.svg';
 import eyebrows_5 from './svg/6_Eyebrows/eyebrows_5.svg';
 
-import lashes_1 from './svg/8_Lashes/lashes_1-01.svg';
-import lashes_2 from './svg/8_Lashes/lashes_2-01.svg';
-import lashes_3 from './svg/8_Lashes/lashes_3-01.svg';
+import lashes_1 from './svg/8_Lashes/lashes_01.svg';
 
 import glasses_1 from './svg/2_Glasses/glasses_1.svg';
 import glasses_2 from './svg/2_Glasses/glasses_2.svg';
@@ -139,6 +144,10 @@ import ear_tan from './svg/5_Ear/ear_tan.svg';
 import ear_tan_1 from './svg/5_Ear/ear_tan_1.svg';
 import ear_brown from './svg/5_Ear/ear_brown.svg';
 import ear_black from './svg/5_Ear/ear_black.svg';
+
+import earing_diamond from './svg/18_earings/earing_diamond.svg';
+import earing_golden from './svg/18_earings/earing_golden.svg';
+import earing_silver from './svg/18_earings/earing_silver.svg';
 
 import watch_1 from './svg/9_Watch/9_watch.svg';
 
@@ -244,6 +253,14 @@ const elements: Elements = {
         '#6B4099': hair_curlyShort_purple,
         '#DB4B25': hair_curlyShort_red,
       },
+      short: {
+        '#2F2B2C': hair_short_black,
+        '#F4EDC9': hair_short_blond,
+        '#6A604F': hair_short_brown,
+        '#747678': hair_short_grey,
+        '#6B4099': hair_short_purple,
+        '#DB4B25': hair_short_red,
+      },
       straightLong: {
         '#2F2B2C': hair_straightLong_black,
         '#F4EDC9': hair_straightLong_blond,
@@ -252,6 +269,13 @@ const elements: Elements = {
         '#6B4099': hair_straightLong_purple,
         '#DB4B25': hair_straightLong_red,
       },
+    },
+  },
+  lashes: {
+    hasCheckBox: true,
+    defaultDisplayed: false,
+    elements: {
+      1: { default: lashes_1 },
     },
   },
   eyes: {
@@ -290,15 +314,6 @@ const elements: Elements = {
       3: { default: eyebrows_3 },
       4: { default: eyebrows_4 },
       5: { default: eyebrows_5 },
-    },
-  },
-  lashes: {
-    hasCheckBox: true,
-    defaultDisplayed: false,
-    elements: {
-      1: { default: lashes_1 },
-      2: { default: lashes_2 },
-      3: { default: lashes_3 },
     },
   },
   glasses: {
@@ -395,6 +410,15 @@ const elements: Elements = {
         brown: ear_brown,
         black: ear_black,
       },
+    },
+  },
+  earings: {
+    hasCheckBox: true,
+    defaultDisplayed: false,
+    elements: {
+      1: { default: earing_diamond },
+      2: { default: earing_golden },
+      3: { default: earing_silver },
     },
   },
   watch: {
