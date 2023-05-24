@@ -21,43 +21,82 @@ import hair_balding_black from './svg/10_Hair/balding/balding/hair_balding_black
 import hair_balding_blond from './svg/10_Hair/balding/balding/hair_balding_blond.svg';
 import hair_balding_brown from './svg/10_Hair/balding/balding/hair_balding_brown.svg';
 import hair_balding_grey from './svg/10_Hair/balding/balding/hair_balding_grey.svg';
+import hair_balding_orange from './svg/10_Hair/balding/balding/hair_balding_orange.svg';
 import hair_balding_purple from './svg/10_Hair/balding/balding/hair_balding_purple.svg';
 import hair_balding_red from './svg/10_Hair/balding/balding/hair_balding_red.svg';
-
-import hair_curlyLong_black from './svg/10_Hair/curley long (African American)/hair_curlyLong_black.svg';
-import hair_curlyLong_blond from './svg/10_Hair/curley long (African American)/hair_curlyLong_blond.svg';
-import hair_curlyLong_brown from './svg/10_Hair/curley long (African American)/hair_curlyLong_brown.svg';
-import hair_curlyLong_grey from './svg/10_Hair/curley long (African American)/hair_curlyLong_grey.svg';
-import hair_curlyLong_purple from './svg/10_Hair/curley long (African American)/hair_curlyLong_purple.svg';
-import hair_curlyLong_red from './svg/10_Hair/curley long (African American)/hair_curlyLong_red.svg';
-
-import hair_curlyShort_black from './svg/10_Hair/Curley short African American)/hair_curlyShort_black.svg';
-import hair_curlyShort_blond from './svg/10_Hair/Curley short African American)/hair_curlyShort_blond.svg';
-import hair_curlyShort_brown from './svg/10_Hair/Curley short African American)/hair_curlyShort_brown.svg';
-import hair_curlyShort_grey from './svg/10_Hair/Curley short African American)/hair_curlyShort_grey.svg';
-import hair_curlyShort_purple from './svg/10_Hair/Curley short African American)/hair_curlyShort_purple.svg';
-import hair_curlyShort_red from './svg/10_Hair/Curley short African American)/hair_curlyShort_red.svg';
+import hair_balding_yellow from './svg/10_Hair/balding/balding/hair_balding_yellow.svg';
 
 import hair_straightShort_black from './svg/10_Hair/Shraight short/1/hair_straightShort_black.svg';
 import hair_straightShort_blond from './svg/10_Hair/Shraight short/1/hair_straightShort_blond.svg';
 import hair_straightShort_brown from './svg/10_Hair/Shraight short/1/hair_straightShort_brown.svg';
 import hair_straightShort_grey from './svg/10_Hair/Shraight short/1/hair_straightShort_grey.svg';
+import hair_straightShort_orange from './svg/10_Hair/Shraight short/1/hair_straightShort_orange.svg';
 import hair_straightShort_purple from './svg/10_Hair/Shraight short/1/hair_straightShort_purple.svg';
 import hair_straightShort_red from './svg/10_Hair/Shraight short/1/hair_straightShort_red.svg';
+import hair_straightShort_yellow from './svg/10_Hair/Shraight short/1/hair_straightShort_yellow.svg';
 
-import hair_short_black from './svg/10_Hair/Short/hair_short_black.svg';
-import hair_short_blond from './svg/10_Hair/Short/hair_short_blond.svg';
-import hair_short_brown from './svg/10_Hair/Short/hair_short_brown.svg';
-import hair_short_grey from './svg/10_Hair/Short/hair_short_grey.svg';
-import hair_short_purple from './svg/10_Hair/Short/hair_short_purple.svg';
-import hair_short_red from './svg/10_Hair/Short/hair_short_red.svg';
+import hair_straightShort_2_black from './svg/10_Hair/Shraight short/2/hair_straightShort_2_black.svg';
+import hair_straightShort_2_blond from './svg/10_Hair/Shraight short/2/hair_straightShort_2_blond.svg';
+import hair_straightShort_2_brown from './svg/10_Hair/Shraight short/2/hair_straightShort_2_brown.svg';
+import hair_straightShort_2_grey from './svg/10_Hair/Shraight short/2/hair_straightShort_2_grey.svg';
+import hair_straightShort_2_orange from './svg/10_Hair/Shraight short/2/hair_straightShort_2_orange.svg';
+import hair_straightShort_2_purple from './svg/10_Hair/Shraight short/2/hair_straightShort_2_purple.svg';
+import hair_straightShort_2_red from './svg/10_Hair/Shraight short/2/hair_straightShort_2_red.svg';
+import hair_straightShort_2_yellow from './svg/10_Hair/Shraight short/2/hair_straightShort_2_yellow.svg';
+
+import hair_newShort_black from './svg/10_Hair/New short/hair_newShort_black.svg';
+import hair_newShort_blond from './svg/10_Hair/New short/hair_newShort_blond.svg';
+import hair_newShort_brown from './svg/10_Hair/New short/hair_newShort_brown.svg';
+import hair_newShort_grey from './svg/10_Hair/New short/hair_newShort_grey.svg';
+import hair_newShort_orange from './svg/10_Hair/New short/hair_newShort_orange.svg';
+import hair_newShort_purple from './svg/10_Hair/New short/hair_newShort_purple.svg';
+import hair_newShort_red from './svg/10_Hair/New short/hair_newShort_red.svg';
+import hair_newShort_yellow from './svg/10_Hair/New short/hair_newShort_yellow.svg';
+
+import hair_curlyShort_black from './svg/10_Hair/Curly short African American)/hair_curlyShort_black.svg';
+import hair_curlyShort_blond from './svg/10_Hair/Curly short African American)/hair_curlyShort_blond.svg';
+import hair_curlyShort_brown from './svg/10_Hair/Curly short African American)/hair_curlyShort_brown.svg';
+import hair_curlyShort_grey from './svg/10_Hair/Curly short African American)/hair_curlyShort_grey.svg';
+import hair_curlyShort_orange from './svg/10_Hair/Curly short African American)/hair_curlyShort_orange.svg';
+import hair_curlyShort_purple from './svg/10_Hair/Curly short African American)/hair_curlyShort_purple.svg';
+import hair_curlyShort_red from './svg/10_Hair/Curly short African American)/hair_curlyShort_red.svg';
+import hair_curlyShort_yellow from './svg/10_Hair/Curly short African American)/hair_curlyShort_yellow.svg';
 
 import hair_straightLong_black from './svg/10_Hair/Straight Long/1/hair_straightLong_black.svg';
 import hair_straightLong_blond from './svg/10_Hair/Straight Long/1/hair_straightLong_blond.svg';
 import hair_straightLong_brown from './svg/10_Hair/Straight Long/1/hair_straightLong_brown.svg';
 import hair_straightLong_grey from './svg/10_Hair/Straight Long/1/hair_straightLong_grey.svg';
+import hair_straightLong_orange from './svg/10_Hair/Straight Long/1/hair_straightLong_orange.svg';
 import hair_straightLong_purple from './svg/10_Hair/Straight Long/1/hair_straightLong_purple.svg';
 import hair_straightLong_red from './svg/10_Hair/Straight Long/1/hair_straightLong_red.svg';
+import hair_straightLong_yellow from './svg/10_Hair/Straight Long/1/hair_straightLong_yellow.svg';
+
+import hair_straightLong_2_black from './svg/10_Hair/Straight Long/2/hair_straightLonger_2_black.svg';
+import hair_straightLong_2_blond from './svg/10_Hair/Straight Long/2/hair_straightLonger_2_blond.svg';
+import hair_straightLong_2_brown from './svg/10_Hair/Straight Long/2/hair_straightLonger_2_brown.svg';
+import hair_straightLong_2_grey from './svg/10_Hair/Straight Long/2/hair_straightLonger_2_grey.svg';
+import hair_straightLong_2_orange from './svg/10_Hair/Straight Long/2/hair_straightLonger_2_orange.svg';
+import hair_straightLong_2_purple from './svg/10_Hair/Straight Long/2/hair_straightLonger_2_purple.svg';
+import hair_straightLong_2_red from './svg/10_Hair/Straight Long/2/hair_straightLonger_2_red.svg';
+import hair_straightLong_2_yellow from './svg/10_Hair/Straight Long/2/hair_straightLonger_2_yellow.svg';
+
+import hair_straightLong_3_black from './svg/10_Hair/Straight Long/3/hair_straightLonger_3_black.svg';
+import hair_straightLong_3_blond from './svg/10_Hair/Straight Long/3/hair_straightLonger_3_blond.svg';
+import hair_straightLong_3_brown from './svg/10_Hair/Straight Long/3/hair_straightLonger_3_brown.svg';
+import hair_straightLong_3_grey from './svg/10_Hair/Straight Long/3/hair_straightLonger_3_grey.svg';
+import hair_straightLong_3_orange from './svg/10_Hair/Straight Long/3/hair_straightLonger_3_orange.svg';
+import hair_straightLong_3_purple from './svg/10_Hair/Straight Long/3/hair_straightLonger_3_purple.svg';
+import hair_straightLong_3_red from './svg/10_Hair/Straight Long/3/hair_straightLonger_3_red.svg';
+import hair_straightLong_3_yellow from './svg/10_Hair/Straight Long/3/hair_straightLonger_3_yellow.svg';
+
+import hair_curlyLong_black from './svg/10_Hair/curly long (African American)/hair_curlyLong_black.svg';
+import hair_curlyLong_blond from './svg/10_Hair/curly long (African American)/hair_curlyLong_blond.svg';
+import hair_curlyLong_brown from './svg/10_Hair/curly long (African American)/hair_curlyLong_brown.svg';
+import hair_curlyLong_grey from './svg/10_Hair/curly long (African American)/hair_curlyLong_grey.svg';
+import hair_curlyLong_orange from './svg/10_Hair/curly long (African American)/hair_curlyLong_orange.svg';
+import hair_curlyLong_purple from './svg/10_Hair/curly long (African American)/hair_curlyLong_purple.svg';
+import hair_curlyLong_red from './svg/10_Hair/curly long (African American)/hair_curlyLong_red.svg';
+import hair_curlyLong_yellow from './svg/10_Hair/curly long (African American)/hair_curlyLong_yellow.svg';
 
 import eyes_big_blue from './svg/7_Eyes/Eyes_big/eyes_big_blue.svg';
 import eyes_big_brown from './svg/7_Eyes/Eyes_big/eyes_big_brown.svg';
@@ -223,50 +262,92 @@ const elements: Elements = {
       straightShort: {
         '#2F2B2C': hair_straightShort_black,
         '#F4EDC9': hair_straightShort_blond,
-        '#6A604F': hair_straightShort_brown,
-        '#747678': hair_straightShort_grey,
+        '#453723': hair_straightShort_brown,
+        '#C7C8CA': hair_straightShort_grey,
+        '#DB4B25': hair_straightShort_orange,
         '#6B4099': hair_straightShort_purple,
-        '#DB4B25': hair_straightShort_red,
+        '#9c1f00': hair_straightShort_red,
+        '#FFE896': hair_straightShort_yellow,
       },
-      balding: {
-        '2F2B2C': hair_balding_black,
-        '#F4EDC9': hair_balding_blond,
-        '#6A604F': hair_balding_brown,
-        '#747678': hair_balding_grey,
-        '#6B4099': hair_balding_purple,
-        '#DB4B25': hair_balding_red,
+      straightShort2: {
+        '#2F2B2C': hair_straightShort_2_black,
+        '#F4EDC9': hair_straightShort_2_blond,
+        '#453723': hair_straightShort_2_brown,
+        '#C7C8CA': hair_straightShort_2_grey,
+        '#DB4B25': hair_straightShort_2_orange,
+        '#6B4099': hair_straightShort_2_purple,
+        '#9c1f00': hair_straightShort_2_red,
+        '#FFE896': hair_straightShort_2_yellow,
       },
-      curleyLong: {
-        '#2F2B2C': hair_curlyLong_black,
-        '#F4EDC9': hair_curlyLong_blond,
-        '#6A604F': hair_curlyLong_brown,
-        '#747678': hair_curlyLong_grey,
-        '#6B4099': hair_curlyLong_purple,
-        '#DB4B25': hair_curlyLong_red,
+      newShort: {
+        '#2F2B2C': hair_newShort_black,
+        '#F4EDC9': hair_newShort_blond,
+        '#453723': hair_newShort_brown,
+        '#C7C8CA': hair_newShort_grey,
+        '#DB4B25': hair_newShort_orange,
+        '#6B4099': hair_newShort_purple,
+        '#9c1f00': hair_newShort_red,
+        '#FFE896': hair_newShort_yellow,
       },
       curlyShort: {
         '#2F2B2C': hair_curlyShort_black,
         '#F4EDC9': hair_curlyShort_blond,
-        '#6A604F': hair_curlyShort_brown,
-        '#747678': hair_curlyShort_grey,
+        '#453723': hair_curlyShort_brown,
+        '#C7C8CA': hair_curlyShort_grey,
+        '#DB4B25': hair_curlyShort_orange,
         '#6B4099': hair_curlyShort_purple,
-        '#DB4B25': hair_curlyShort_red,
-      },
-      short: {
-        '#2F2B2C': hair_short_black,
-        '#F4EDC9': hair_short_blond,
-        '#6A604F': hair_short_brown,
-        '#747678': hair_short_grey,
-        '#6B4099': hair_short_purple,
-        '#DB4B25': hair_short_red,
+        '#9c1f00': hair_curlyShort_red,
+        '#FFE896': hair_curlyShort_yellow,
       },
       straightLong: {
         '#2F2B2C': hair_straightLong_black,
         '#F4EDC9': hair_straightLong_blond,
-        '#6A604F': hair_straightLong_brown,
-        '#747678': hair_straightLong_grey,
+        '#453723': hair_straightLong_brown,
+        '#C7C8CA': hair_straightLong_grey,
+        '#DB4B25': hair_straightLong_orange,
         '#6B4099': hair_straightLong_purple,
-        '#DB4B25': hair_straightLong_red,
+        '#9c1f00': hair_straightLong_red,
+        '#FFE896': hair_straightLong_yellow,
+      },
+      straightLong2: {
+        '#2F2B2C': hair_straightLong_2_black,
+        '#F4EDC9': hair_straightLong_2_blond,
+        '#453723': hair_straightLong_2_brown,
+        '#C7C8CA': hair_straightLong_2_grey,
+        '#DB4B25': hair_straightLong_2_orange,
+        '#6B4099': hair_straightLong_2_purple,
+        '#9c1f00': hair_straightLong_2_red,
+        '#FFE896': hair_straightLong_2_yellow,
+      },
+      straightLong3: {
+        '#2F2B2C': hair_straightLong_3_black,
+        '#F4EDC9': hair_straightLong_3_blond,
+        '#453723': hair_straightLong_3_brown,
+        '#C7C8CA': hair_straightLong_3_grey,
+        '#DB4B25': hair_straightLong_3_orange,
+        '#6B4099': hair_straightLong_3_purple,
+        '#9c1f00': hair_straightLong_3_red,
+        '#FFE896': hair_straightLong_3_yellow,
+      },
+      curlyLong: {
+        '#2F2B2C': hair_curlyLong_black,
+        '#F4EDC9': hair_curlyLong_blond,
+        '#453723': hair_curlyLong_brown,
+        '#C7C8CA': hair_curlyLong_grey,
+        '#DB4B25': hair_curlyLong_orange,
+        '#6B4099': hair_curlyLong_purple,
+        '#9c1f00': hair_curlyLong_red,
+        '#FFE896': hair_curlyLong_yellow,
+      },
+      balding: {
+        '#2F2B2C': hair_balding_black,
+        '#F4EDC9': hair_balding_blond,
+        '#453723': hair_balding_brown,
+        '#C7C8CA': hair_balding_grey,
+        '#DB4B25': hair_balding_orange,
+        '#6B4099': hair_balding_purple,
+        '#9c1f00': hair_balding_red,
+        '#FFE896': hair_balding_yellow,
       },
     },
   },
