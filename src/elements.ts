@@ -97,7 +97,6 @@ import nose_4 from './svg/1_Nose/nose_4.svg';
 import nose_5 from './svg/1_Nose/nose_5.svg';
 import nose_6 from './svg/1_Nose/nose_6.svg';
 import nose_7 from './svg/1_Nose/nose_7.svg';
-import nose_8 from './svg/1_Nose/nose_8.svg';
 
 import mouth_1 from './svg/8_Mouth/mouth_1.svg';
 import mouth_2 from './svg/8_Mouth/mouth_2-01.svg';
@@ -333,7 +332,6 @@ const elements: Elements = {
       5: { default: nose_5 },
       6: { default: nose_6 },
       7: { default: nose_7 },
-      8: { default: nose_8 },
     },
   },
   mouth: {
