@@ -156,26 +156,70 @@ import lips_4_normal from './svg/8_Mouth/lips/lips_4/lips_4_normal.svg';
 import lips_4_pink from './svg/8_Mouth/lips/lips_4/lips_4_pink.svg';
 import lips_4_red from './svg/8_Mouth/lips/lips_4/lips_4_red.svg';
 
-import beard_black from './svg/3_Mustache/beard_2/beard_2_black.svg';
-import beard_blond from './svg/3_Mustache/beard_2/beard_2_blond.svg';
-import beard_brown from './svg/3_Mustache/beard_2/beard_2_brown.svg';
-import beard_grey from './svg/3_Mustache/beard_2/beard_2_grey.svg';
-import beard_purple from './svg/3_Mustache/beard_2/beard_2_purple.svg';
-import beard_red from './svg/3_Mustache/beard_2/beard_2_red.svg';
+import beard_1_black from './svg/3_Mustache/beard_1/beard_black_01.svg';
+import beard_1_blond from './svg/3_Mustache/beard_1/beard_blond_01.svg';
+import beard_1_brown from './svg/3_Mustache/beard_1/beard_brown_01.svg';
+import beard_1_grey from './svg/3_Mustache/beard_1/beard_grey_01.svg';
+import beard_1_orange from './svg/3_Mustache/beard_1/beard_orange_01.svg';
+import beard_1_purple from './svg/3_Mustache/beard_1/beard_purple_01.svg';
+import beard_1_red from './svg/3_Mustache/beard_1/beard_red_01.svg';
+import beard_1_yellow from './svg/3_Mustache/beard_1/beard_yellow_01.svg';
+
+import beard_2_black from './svg/3_Mustache/beard_2/beard_2_black.svg';
+import beard_2_blond from './svg/3_Mustache/beard_2/beard_2_blond.svg';
+import beard_2_brown from './svg/3_Mustache/beard_2/beard_2_brown.svg';
+import beard_2_grey from './svg/3_Mustache/beard_2/beard_2_grey.svg';
+import beard_2_orange from './svg/3_Mustache/beard_2/beard_2_orange.svg';
+import beard_2_purple from './svg/3_Mustache/beard_2/beard_2_purple.svg';
+import beard_2_red from './svg/3_Mustache/beard_2/beard_2_red.svg';
+import beard_2_yellow from './svg/3_Mustache/beard_2/beard_2_yellow.svg';
 
 import goatee_black from './svg/3_Mustache/goatee_1/beard_goatee_black.svg';
 import goatee_blond from './svg/3_Mustache/goatee_1/beard_goatee_blond.svg';
 import goatee_brown from './svg/3_Mustache/goatee_1/beard_goatee_brown.svg';
 import goatee_grey from './svg/3_Mustache/goatee_1/beard_goatee_grey.svg';
+import goatee_orange from './svg/3_Mustache/goatee_1/beard_goatee_orange.svg';
 import goatee_purple from './svg/3_Mustache/goatee_1/beard_goatee_purple.svg';
 import goatee_red from './svg/3_Mustache/goatee_1/beard_goatee_red.svg';
+import goatee_yellow from './svg/3_Mustache/goatee_1/beard_goatee_yellow.svg';
 
-import mustache_black from './svg/3_Mustache/mustache_2/mustache_black-01.svg';
-import mustache_blond from './svg/3_Mustache/mustache_2/mustache_blond-01.svg';
-import mustache_brown from './svg/3_Mustache/mustache_2/mustache_brown-01.svg';
-import mustache_grey from './svg/3_Mustache/mustache_2/mustache_grey.svg';
-import mustache_purple from './svg/3_Mustache/mustache_2/mustache_purple-01.svg';
-import mustache_red from './svg/3_Mustache/mustache_2/mustache_red-01.svg';
+import goatee_2_black from './svg/3_Mustache/goatee_2/goatee_2_black.svg';
+import goatee_2_blond from './svg/3_Mustache/goatee_2/goatee_2_blond.svg';
+import goatee_2_brown from './svg/3_Mustache/goatee_2/goatee_2_brown.svg';
+import goatee_2_grey from './svg/3_Mustache/goatee_2/goatee_2_grey.svg';
+import goatee_2_orange from './svg/3_Mustache/goatee_2/goatee_2_orange.svg';
+import goatee_2_purple from './svg/3_Mustache/goatee_2/goatee_2_purple.svg';
+import goatee_2_red from './svg/3_Mustache/goatee_2/goatee_2_red.svg';
+import goatee_2_yellow from './svg/3_Mustache/goatee_2/goatee_2_yellow.svg';
+
+import mustache_1 from './svg/3_Mustache/mustache_1/mustache.svg';
+
+import mustache_2_black from './svg/3_Mustache/mustache_2/mustache_2_black.svg';
+import mustache_2_blond from './svg/3_Mustache/mustache_2/mustache_2_blond.svg';
+import mustache_2_brown from './svg/3_Mustache/mustache_2/mustache_2_brown.svg';
+import mustache_2_grey from './svg/3_Mustache/mustache_2/mustache_2_grey.svg';
+import mustache_2_orange from './svg/3_Mustache/mustache_2/mustache_2_orange.svg';
+import mustache_2_purple from './svg/3_Mustache/mustache_2/mustache_2_purple.svg';
+import mustache_2_red from './svg/3_Mustache/mustache_2/mustache_2_red.svg';
+import mustache_2_yellow from './svg/3_Mustache/mustache_2/mustache_2_yellow.svg';
+
+import mustache_3_black from './svg/3_Mustache/mustache_3/mustache_3_black.svg';
+import mustache_3_blond from './svg/3_Mustache/mustache_3/mustache_3_blond.svg';
+import mustache_3_brown from './svg/3_Mustache/mustache_3/mustache_3_brown.svg';
+import mustache_3_grey from './svg/3_Mustache/mustache_3/mustache_3_grey.svg';
+import mustache_3_orange from './svg/3_Mustache/mustache_3/mustache_3_orange.svg';
+import mustache_3_purple from './svg/3_Mustache/mustache_3/mustache_3_purple.svg';
+import mustache_3_red from './svg/3_Mustache/mustache_3/mustache_3_red.svg';
+import mustache_3_yellow from './svg/3_Mustache/mustache_3/mustache_3_yellow.svg';
+
+import mustache_4_black from './svg/3_Mustache/mustache_4/mustache_4_black.svg';
+import mustache_4_blond from './svg/3_Mustache/mustache_4/mustache_4_blond.svg';
+import mustache_4_brown from './svg/3_Mustache/mustache_4/mustache_4_brown.svg';
+import mustache_4_grey from './svg/3_Mustache/mustache_4/mustache_4_grey.svg';
+import mustache_4_orange from './svg/3_Mustache/mustache_4/mustache_4_orange.svg';
+import mustache_4_purple from './svg/3_Mustache/mustache_4/mustache_4_purple.svg';
+import mustache_4_red from './svg/3_Mustache/mustache_4/mustache_4_red.svg';
+import mustache_4_yellow from './svg/3_Mustache/mustache_4/mustache_4_yellow.svg';
 
 import ear_white from './svg/5_Ear/ear_white.svg';
 import ear_tan from './svg/5_Ear/ear_tan.svg';
@@ -449,36 +493,6 @@ const elements: Elements = {
       },
     },
   },
-  mustache: {
-    hasCheckBox: true,
-    defaultDisplayed: false,
-    elements: {
-      beard: {
-        '#2F2B2C': beard_black,
-        '#F4EDC9': beard_blond,
-        '#6A604F': beard_brown,
-        '#747678': beard_grey,
-        '#6B4099': beard_purple,
-        '#DB4B25': beard_red,
-      },
-      goatee: {
-        '#2F2B2C': goatee_black,
-        '#F4EDC9': goatee_blond,
-        '#6A604F': goatee_brown,
-        '#747678': goatee_grey,
-        '#6B4099': goatee_purple,
-        '#DB4B25': goatee_red,
-      },
-      mustache: {
-        '#2F2B2C': mustache_black,
-        '#F4EDC9': mustache_blond,
-        '#6A604F': mustache_brown,
-        '#747678': mustache_grey,
-        '#6B4099': mustache_purple,
-        '#DB4B25': mustache_red,
-      },
-    },
-  },
   ear: {
     hideToolPanel: true,
     elements: {
@@ -498,6 +512,92 @@ const elements: Elements = {
       1: { default: earing_diamond },
       2: { default: earing_golden },
       3: { default: earing_silver },
+    },
+  },
+  mustache: {
+    hasCheckBox: true,
+    defaultDisplayed: false,
+    elements: {
+      beard_1: {
+        '#2F2B2C': beard_1_black,
+        '#F4EDC9': beard_1_blond,
+        '#453723': beard_1_brown,
+        '#C7C8CA': beard_1_grey,
+        '#DB4B25': beard_1_orange,
+        '#6B4099': beard_1_purple,
+        '#9c1f00': beard_1_red,
+        '#FFE896': beard_1_yellow,
+      },
+      beard_2: {
+        '#2F2B2C': beard_2_black,
+        '#F4EDC9': beard_2_blond,
+        '#453723': beard_2_brown,
+        '#C7C8CA': beard_2_grey,
+        '#DB4B25': beard_2_orange,
+        '#6B4099': beard_2_purple,
+        '#9c1f00': beard_2_red,
+        '#FFE896': beard_2_yellow,
+      },
+      goatee: {
+        '#2F2B2C': goatee_black,
+        '#F4EDC9': goatee_blond,
+        '#453723': goatee_brown,
+        '#C7C8CA': goatee_grey,
+        '#DB4B25': goatee_orange,
+        '#6B4099': goatee_purple,
+        '#9c1f00': goatee_red,
+        '#FFE896': goatee_yellow,
+      },
+      goatee2: {
+        '#2F2B2C': goatee_2_black,
+        '#F4EDC9': goatee_2_blond,
+        '#453723': goatee_2_brown,
+        '#C7C8CA': goatee_2_grey,
+        '#DB4B25': goatee_2_orange,
+        '#6B4099': goatee_2_purple,
+        '#9c1f00': goatee_2_red,
+        '#FFE896': goatee_2_yellow,
+      },
+      mustache1: {
+        '#2F2B2C': mustache_1,
+        '#F4EDC9': mustache_1,
+        '#453723': mustache_1,
+        '#C7C8CA': mustache_1,
+        '#DB4B25': mustache_1,
+        '#6B4099': mustache_1,
+        '#9c1f00': mustache_1,
+        '#FFE896': mustache_1,
+      },
+      mustache2: {
+        '#2F2B2C': mustache_2_black,
+        '#F4EDC9': mustache_2_blond,
+        '#453723': mustache_2_brown,
+        '#C7C8CA': mustache_2_grey,
+        '#DB4B25': mustache_2_orange,
+        '#6B4099': mustache_2_purple,
+        '#9c1f00': mustache_2_red,
+        '#FFE896': mustache_2_yellow,
+      },
+      mustache3: {
+        '#2F2B2C': mustache_3_black,
+        '#F4EDC9': mustache_3_blond,
+        '#453723': mustache_3_brown,
+        '#C7C8CA': mustache_3_grey,
+        '#DB4B25': mustache_3_orange,
+        '#6B4099': mustache_3_purple,
+        '#9c1f00': mustache_3_red,
+        '#FFE896': mustache_3_yellow,
+      },
+      mustache4: {
+        '#2F2B2C': mustache_4_black,
+        '#F4EDC9': mustache_4_blond,
+        '#453723': mustache_4_brown,
+        '#C7C8CA': mustache_4_grey,
+        '#DB4B25': mustache_4_orange,
+        '#6B4099': mustache_4_purple,
+        '#9c1f00': mustache_4_red,
+        '#FFE896': mustache_4_yellow,
+      },
     },
   },
   watch: {
