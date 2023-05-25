@@ -128,6 +128,7 @@ import lashes_1 from './svg/8_Lashes/lashes_01.svg';
 
 import glasses_1 from './svg/2_Glasses/glasses_1.svg';
 import glasses_2 from './svg/2_Glasses/glasses_2.svg';
+import glasses_3 from './svg/2_Glasses/glasses_3.svg';
 
 import nose_1 from './svg/1_Nose/nose_1.svg';
 import nose_2 from './svg/1_Nose/nose_2.svg';
@@ -446,6 +447,7 @@ const elements: Elements = {
     elements: {
       1: { default: glasses_1 },
       2: { default: glasses_2 },
+      3: { default: glasses_3 },
     },
   },
   nose: {
