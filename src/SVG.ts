@@ -20,7 +20,7 @@ class SVG {
     const fetchedEl = await Promise.all(this.layers.getUrlsList().map((el) => SVG.getElement(el)));
 
     const openingTag = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 450 378">';
-    const content = fetchedEl.join();
+    const content = fetchedEl.join('');
     const closingTag = '</svg>';
 
     const blob = new Blob([openingTag + content + closingTag], { type: 'image/svg+xml' });
