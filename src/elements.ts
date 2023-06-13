@@ -98,6 +98,33 @@ import hair_curlyLong_purple from './svg/10_Hair/curly long (African American)/h
 import hair_curlyLong_red from './svg/10_Hair/curly long (African American)/hair_curlyLong_red.svg';
 import hair_curlyLong_yellow from './svg/10_Hair/curly long (African American)/hair_curlyLong_yellow.svg';
 
+import hair_01_black from './svg/10_Hair/1/hair_01_black.svg';
+import hair_01_blond from './svg/10_Hair/1/hair_01_blond.svg';
+import hair_01_brown from './svg/10_Hair/1/hair_01_brown.svg';
+import hair_01_grey from './svg/10_Hair/1/hair_01_grey.svg';
+import hair_01_orange from './svg/10_Hair/1/hair_01_orange.svg';
+import hair_01_purple from './svg/10_Hair/1/hair_01_purple.svg';
+import hair_01_red from './svg/10_Hair/1/hair_01_red.svg';
+import hair_01_yellow from './svg/10_Hair/1/hair_01_yellow.svg';
+
+import hair_02_black from './svg/10_Hair/2/hair_02_black.svg';
+import hair_02_blond from './svg/10_Hair/2/hair_02_blond.svg';
+import hair_02_brown from './svg/10_Hair/2/hair_02_brown.svg';
+import hair_02_grey from './svg/10_Hair/2/hair_02_grey.svg';
+import hair_02_orange from './svg/10_Hair/2/hair_02_orange.svg';
+import hair_02_purple from './svg/10_Hair/2/hair_02_purple.svg';
+import hair_02_red from './svg/10_Hair/2/hair_02_red.svg';
+import hair_02_yellow from './svg/10_Hair/2/hair_02_yellow.svg';
+
+import hair_03_black from './svg/10_Hair/3/hair_03_black.svg';
+import hair_03_blond from './svg/10_Hair/3/hair_03_blond.svg';
+import hair_03_brown from './svg/10_Hair/3/hair_03_brown.svg';
+import hair_03_grey from './svg/10_Hair/3/hair_03_grey.svg';
+import hair_03_orange from './svg/10_Hair/3/hair_03_orange.svg';
+import hair_03_purple from './svg/10_Hair/3/hair_03_purple.svg';
+import hair_03_red from './svg/10_Hair/3/hair_03_red.svg';
+import hair_03_yellow from './svg/10_Hair/3/hair_03_yellow.svg';
+
 import eyes_big_blue from './svg/7_Eyes/Eyes_big/eyes_big_blue.svg';
 import eyes_big_brown from './svg/7_Eyes/Eyes_big/eyes_big_brown.svg';
 import eyes_big_green from './svg/7_Eyes/Eyes_big/eyes_big_green.svg';
@@ -393,6 +420,36 @@ const elements: Elements = {
         '#6B4099': hair_balding_purple,
         '#9c1f00': hair_balding_red,
         '#FFE896': hair_balding_yellow,
+      },
+      '01': {
+        '#2F2B2C': hair_01_black,
+        '#F4EDC9': hair_01_blond,
+        '#453723': hair_01_brown,
+        '#C7C8CA': hair_01_grey,
+        '#DB4B25': hair_01_orange,
+        '#6B4099': hair_01_purple,
+        '#9c1f00': hair_01_red,
+        '#FFE896': hair_01_yellow,
+      },
+      '02': {
+        '#2F2B2C': hair_02_black,
+        '#F4EDC9': hair_02_blond,
+        '#453723': hair_02_brown,
+        '#C7C8CA': hair_02_grey,
+        '#DB4B25': hair_02_orange,
+        '#6B4099': hair_02_purple,
+        '#9c1f00': hair_02_red,
+        '#FFE896': hair_02_yellow,
+      },
+      '03': {
+        '#2F2B2C': hair_03_black,
+        '#F4EDC9': hair_03_blond,
+        '#453723': hair_03_brown,
+        '#C7C8CA': hair_03_grey,
+        '#DB4B25': hair_03_orange,
+        '#6B4099': hair_03_purple,
+        '#9c1f00': hair_03_red,
+        '#FFE896': hair_03_yellow,
       },
     },
   },
