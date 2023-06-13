@@ -303,6 +303,12 @@ const elements: Elements = {
       },
     },
   },
+  textCarma: {
+    hideToolPanel: true,
+    elements: {
+      0: { default: text_carma },
+    },
+  },
   shirt: {
     elements: {
       default: {
@@ -673,12 +679,6 @@ const elements: Elements = {
         dark: text_for_light,
         light: text_for_dark,
       },
-    },
-  },
-  textCarma: {
-    hideToolPanel: true,
-    elements: {
-      0: { default: text_carma },
     },
   },
   lightningOurPath: {
